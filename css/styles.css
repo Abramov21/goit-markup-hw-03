@@ -35,6 +35,10 @@ margin: 0;
 }
 
 
+ul{
+  padding-inline-start: 0;
+}
+
 /*  utilities  */
 
 
@@ -359,6 +363,23 @@ background-color: #188CE8;;
 
 /*  Портфоліо  */
 
+.works{
+  margin-top: 94px;
+}
+
+.works-buttons{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.bth{
+  margin: 8px;
+  margin-top: 0;
+}
+
 .works-buttons .bth{
   color: var(--primary-color);
   cursor: pointer;
@@ -382,13 +403,26 @@ background-color: #188CE8;;
   letter-spacing: 0.06em;
   color: var(--primary-color);
   text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
+
+.works-image{
+  margin-bottom: 20px;
+}
+
 
 .works-kinds{
   font-size: 16px;
   line-height: 1.88;
   color: var(--second-color);
   text-decoration: none;
+
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .item-link{
