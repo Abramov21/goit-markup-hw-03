@@ -190,6 +190,14 @@ flex-wrap: wrap;
   color: var(--primary-white-color);
 }
 
+.hero .bth{
+  display: block;
+  align-items: center;
+  padding: 10px 32px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .bth{
   display: block;
   align-items: center;
@@ -211,8 +219,8 @@ flex-wrap: wrap;
   color: var(--primary-white-color);
 }
 
-.bth:hover,
-.bth:focus{
+.bth-hero:hover,
+.bth-hero:focus{
 background-color: #188CE8;;
 }
 
