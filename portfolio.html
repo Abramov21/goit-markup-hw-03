@@ -14,28 +14,37 @@
 
   <body>
     <header class="header">
-      <a class="logo link" href="./index.html"><span class="accent">Web</span>Studio</a>
-      <nav class="header-nav">
-        <ul class="nav-list list">
-          <li><a class="nav-link link" href="./index.html">Студия</a></li>
-          <li><a class="nav-link link current" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="nav-link link" href="">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="conteiner header-flex">
+        <a class="logo link logo-conteiner" href="./index.html"
+          ><span class="accent">Web</span>Studio</a
+        >
 
-      <ul class="contacts-list list">
-        <li>
-          <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com </a>
-        </li>
-        <li>
-          <a class="contact-link link" href="tel:+380961111111"> +380961111111</a>
-        </li>
-      </ul>
+        <nav class="header-nav">
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a class="nav-link link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-item"><a class="nav-link link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="contacts-list list">
+          <li class="contact-item">
+            <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com </a>
+          </li>
+          <li class="contact-item">
+            <a class="contact-link link" href="tel:+38 096 1111111"> +38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
       <section class="works">
-        <h1 class="section-title">навигация</h1>
+        <h1 class="section-title visually-hidden">навигация</h1>
         <ul class="works-buttons list">
           <li><button class="works-buttons bth" type="button">Все</button></li>
           <li><button class="works-buttons bth" type="button">Веб-сайты</button></li>
@@ -44,7 +53,7 @@
           <li><button class="works-buttons bth" type="button">Маркетинг</button></li>
         </ul>
 
-        <h2 class="section-title">Выполненые работы</h2>
+        <h2 class="section-title visually-hidden">Выполненые работы</h2>
         <ul class="works list">
           <li class="works-item">
             <a class="item-link" href=""

@@ -1,9 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
     --primary-color: #212121;
     --second-color: #757575;
     --logo-text-color: #000000;
     --accent-color: #2196f3;
     --primary-white-color: #ffffff;
+
+   --items:1;
+   --indent:30px;
 }
 
 
@@ -16,8 +25,45 @@ body {
    line-height: 1.71 ;
 }
 
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+margin: 0;
+}
+
 
 /*  utilities  */
+
+
+/* grid */
+
+.grid{
+  display: flex;
+  flex-wrap:wrap;
+  margin: -15px;
+}
+
+.grid-item{
+  flex-basis: calc((100%-var(--indent)*var(--items)))/var(--items);
+  margin: 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .link{
   text-decoration: none;
@@ -31,21 +77,61 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  }
+}
 
+.conteiner{
+  outline: 1px solid rgb(192, 181, 181);
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
 /* header */
 
+.header-flex{
+  display: flex;
+  align-items: center;
+  padding: auto;
+}
+
+.header-nav{
+  margin-right: auto;
+}
+
+ .nav-list{
+  display: flex;
+  padding-left: 0px;
+}
+
+
 .logo{
+  width: 145px;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--logo-text-color);
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .accent{
   color: var(--accent-color);
+}
+
+.nav-item:not(:last-child){
+  margin-right: 50px;
+}
+
+.contacts-list{
+  display: flex;
+}
+
+.contact-item:not(:last-child){
+  margin-right: 50px;
 }
 
 
@@ -74,20 +160,39 @@ body {
 /* hero */
 
 .hero{
- background-color:  #2F303A;
+  background-color:  #2F303A;
+}
+
+.hero-conteiner{
+padding: 200px auto;
+padding-top: 200px;
+padding-bottom: 200px;
+flex-wrap: wrap;
 }
 
 .hero-title{
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: var(--primary-white-color);
+  align-items: center;
+  margin: 0 auto 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  max-width: 600px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
 }
 
 .bth{
+  display: block;
+  align-items: center;
+  padding: 10px 32px;
+  margin-right: auto;
+  margin-left: auto;
+
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -108,10 +213,30 @@ background-color: #188CE8;;
 }
 
 /* specifics */
+
+.specifics{
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.specifics-box-flex{
+  display: flex;
+  flex-direction: row;
+}
+
 .specifics-title{
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+.specifics-list{
+  display: flex;
+}
+
+.specifics-item{
+  width: 270px;
 }
 
 .specifics-text{
@@ -120,20 +245,88 @@ background-color: #188CE8;;
 
 /* about */
 
+.about{
+   margin-bottom: 94px;
+   padding-left: 0px;
+}
+
+.about .section-title{
+  display: block;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-conteiner{
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-list{
+  display: flex;
+}
+
+/* .about-item:not(:last-child){
+  margin-right: 30px;
+  justify-content: space-between;
+} */
+
 
 /* team */
 
 .team{
+  margin-bottom: 94px;
   background-color: #F5F4FA;;
+  padding-top: 94px;
+}
+
+.team-conteiner{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.team .section-title{
+  display: block;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.team-list{
+  display: flex;
+
+}
+
+.team-item{
+  --items: 4;
+  width: 270px;
+  padding-bottom: 30px;
+}
+
+.team-item:not(:last-child){
+  margin-right: 30px;
+}
+
+.team-image{
+  margin-bottom: 30px;
 }
 
 .team-name{
-    font-weight: 500;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+
+  margin-bottom: 10px;
+  margin-left: 60px;
 }
 
 .team-position{
+  margin-left: 70px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
