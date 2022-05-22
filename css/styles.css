@@ -219,8 +219,8 @@ flex-wrap: wrap;
   color: var(--primary-white-color);
 }
 
-.bth-hero:hover,
-.bth-hero:focus{
+.bth:hover,
+.bth:focus{
 background-color: #188CE8;;
 }
 
@@ -259,7 +259,6 @@ background-color: #188CE8;;
 
 .about{
    margin-bottom: 94px;
-   padding-left: 0px;
 }
 
 .about .section-title{
@@ -319,13 +318,6 @@ background-color: #188CE8;;
   padding-bottom: 30px;
 }
 
-.team-item:not(:last-child){
-  margin-right: 30px;
-}
-
-.team-image{
-  margin-bottom: 30px;
-}
 
 .team-name{
   font-weight: 500;
