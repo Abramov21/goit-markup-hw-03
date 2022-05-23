@@ -318,6 +318,10 @@ background-color: #188CE8;;
   padding-bottom: 30px;
 }
 
+.team-desc{
+  padding-left: auto;
+  padding-right: auto;
+}
 
 .team-name{
   font-weight: 500;
@@ -344,8 +348,19 @@ background-color: #188CE8;;
   background-color:  #2F303A;
 }
 
+.footer-conteiner{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-conteiner .logo{
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
 .footer .logo{
   color: var(--primary-white-color);
+  margin-bottom: 20px;
 }
 
 .footer-adress{
@@ -358,6 +373,7 @@ background-color: #188CE8;;
   font-style: normal ;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
 }
 
 
