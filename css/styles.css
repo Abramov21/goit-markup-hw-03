@@ -84,7 +84,6 @@ ul{
 }
 
 .conteiner{
-  outline: 1px solid rgb(192, 181, 181);
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -93,6 +92,10 @@ ul{
 }
 
 /* header */
+
+.header{
+  border: 1px solid #ECECEC;
+}
 
 .header-flex{
   display: flex;
@@ -318,23 +321,32 @@ background-color: #188CE8;;
   padding-bottom: 30px;
 }
 
-.team-desc{
-  padding-left: auto;
-  padding-right: auto;
+.team-image{
+  margin-bottom: 30px;
+}
+
+.team-decs{
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  background: var(--primary-white-color);
+  width: 370px;
 }
 
 .team-name{
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-
   margin-bottom: 10px;
-  margin-left: 60px;
+  text-align: center;
 }
 
 .team-position{
-  margin-left: 70px;
-
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -342,25 +354,32 @@ background-color: #188CE8;;
 }
 
 
+
 /* footer */
 
 .footer{
   background-color:  #2F303A;
-}
-
-.footer-conteiner{
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer-conteiner .logo{
+/* .footer-conteiner{
+  padding-top: 60px;
+  padding-bottom: 60px;
+} */
+
+/* .footer-conteiner > .logo{
   margin-bottom: 20px;
-  margin-right: 0;
+} */
+
+.footer .list{
+padding-top: 0px;
 }
 
 .footer .logo{
   color: var(--primary-white-color);
   margin-bottom: 20px;
+  margin-right:0;
 }
 
 .footer-adress{
@@ -381,6 +400,7 @@ background-color: #188CE8;;
 
 .works{
   margin-top: 94px;
+  margin-bottom: 94px;
 }
 
 .works-buttons{
@@ -419,14 +439,7 @@ background-color: #188CE8;;
   letter-spacing: 0.06em;
   color: var(--primary-color);
   text-decoration: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
-}
 
-.works-image{
-  margin-bottom: 20px;
 }
 
 
@@ -436,11 +449,18 @@ background-color: #188CE8;;
   color: var(--second-color);
   text-decoration: none;
 
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+}
+
+
+.works-desc{
+  padding: 20px 20px;
+  border-bottom: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  width: 370px;
 }
 
 .item-link{
   text-decoration: none;
+
 }
