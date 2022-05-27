@@ -269,7 +269,7 @@ padding-bottom: 94px;
 /* about */
 
 .about{
-  padding-top: 94px;
+  /* padding-top: 94px; */
   padding-bottom: 94px;
 }
 
@@ -364,8 +364,8 @@ padding-bottom: 94px;
 
 .footer{
   background-color:  #2F303A;
-  /* padding-top: 60px;
-  padding-bottom: 60px; */
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* .footer-conteiner{
@@ -379,17 +379,22 @@ padding-bottom: 94px;
 
 .footer .list{
 padding-top: 0px;
+padding-bottom: 0;
 }
 
-.footer-item{
+.footer-item:not(:last-child){
   margin-bottom: 9px;
 }
 
-
 .footer .logo{
+  display: block;
   color: var(--primary-white-color);
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   margin-right:0;
+}
+
+.footer {
+
 }
 
 .footer-adress{
@@ -419,16 +424,30 @@ padding-top: 0px;
   display: flex;
   justify-content: center;
   padding-bottom: 0;
+  padding: 6px 22px;
+}
+
+.works-buttons .works-item:first-child{
+  margin-left: 0;
+}
+
+.works-buttons .works-item:last-child{
+  margin-right: 0;
 }
 
 .works-item{
   margin: 8px;
   margin-top: 0;
   margin-bottom: 0;
-
 }
 
+.works-item:first-child{
+  margin-left: 0;
+}
 
+.works-item:last-child{
+  margin-right: 0;
+}
 
 .works-buttons .bth{
   color: var(--primary-color);
